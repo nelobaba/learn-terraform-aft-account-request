@@ -23,3 +23,29 @@ module "sandbox_dev" {
 
   account_customizations_name = ""
 }
+
+module "sandbox_aft" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "manoutechconsulting+5@gmail.com"
+    AccountName               = "sandbox-aft"
+    ManagedOrganizationalUnit = "Sandbox"
+    SSOUserEmail              = "manoutechconsulting+5@gmail.com"
+    SSOUserFirstName          = "Manoutech"
+    SSOUserLastName           = "IT Firm"
+  }
+
+  account_tags = {
+    "Environment" = "sandbox"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "nelobaba"
+    change_reason       = "Provision sandbox-aft account via AFT"
+  }
+
+  custom_fields = {}
+
+  account_customizations_name = ""
+}
