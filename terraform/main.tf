@@ -47,5 +47,5 @@ module "sandbox_aft" {
 
   custom_fields = {}
 
-  account_customizations_name = ""
+  account_customizations_name = "sandbox"
 }
