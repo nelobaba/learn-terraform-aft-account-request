@@ -42,7 +42,7 @@ module "sandbox_aft" {
 
   change_management_parameters = {
     change_requested_by = "nelobaba"
-    change_reason       = "Provision sandbox-aft account via AFT"
+    change_reason       = "Provision sandbox-aft account via AFT (retry after Sandbox OU registered in Control Tower)"
   }
 
   custom_fields = {}
